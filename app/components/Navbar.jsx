@@ -9,8 +9,9 @@ import { GoMoon } from "react-icons/go";
 import { RiMenu3Line } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
 import Image from 'next/image';
+import { PiSunLight } from "react-icons/pi";
 
-const Navbar = () => {
+const Navbar = ({ isDarkMode, setIsDarkMode}) => {
   const sideBarRef = useRef();
 
   const [isScroll, setIsScroll] = useState(false);
@@ -21,6 +22,10 @@ const Navbar = () => {
   const closeSideBar = () => {
     sideBarRef.current.style.transition = "0.5s ease";
     sideBarRef.current.style.transform = "translateX(16rem)";
+  }
+
+  const toggleDarkMode = () => {
+    setIsDarkMode((prev) => !prev);
   }
 
   useEffect(() => {
@@ -35,12 +40,14 @@ const Navbar = () => {
   return (
     <>
     
-    <nav className={`fixed flex justify-between items-center w-full py-4 px-6 lg:px-8 xl:px-[8%] z-50 ${isScroll ? "bg-white  bg-opacity-50 " : ""} `}>
+    <nav className={`fixed flex justify-between items-center w-full py-4 px-6 lg:px-8 xl:px-[8%] z-50  ${isScroll ? "bg-white  bg-opacity-50 shadow-sm   " : ""} `}>
       <a href='#top'>
-        <div className='mr-14 flex items-end  justify-center cursor-pointer'> <span className='font-bold text-2xl text-[#386641]'>Theint</span>
-      <IoGlassesOutline className='text-[#333d29] text-2xl' /></div>
+        <div className=" flex items-end  justify-center ">
+                <span className="font-bold text-2xl text-[#386641] ">Theint</span>
+                <IoGlassesOutline className="text-[#768468]  text-2xl" />
+              </div>
       </a>
-      <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? " " : "bg-white shadow-sm bg-opacity-50"}`}>
+      <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3   ${isScroll ? " " : "bg-white shadow-sm bg-opacity-50  "}`}>
         <li><a href="#top" className=''>Home</a></li>
         <li><a href="#about">About me</a></li> 
         <li><a href="#services">Services</a></li> 
@@ -49,7 +56,7 @@ const Navbar = () => {
         </ul>
 
         <div className='flex items-center gap-4'>
-        <button><GoMoon className='text-2xl cursor-pointer' /></button>
+        {/* <button onClick={toggleDarkMode}>{isDarkMode?<PiSunLight className='text-2xl cursor-pointer'/> :<GoMoon className='text-2xl cursor-pointer' />}</button> */}
           <a href='#contact' className='hidden lg:flex items-center gap-2 px-8 py-2 border border-gray-500 rounded-full ml-4 '>
           Contact
           <MdArrowOutward />
