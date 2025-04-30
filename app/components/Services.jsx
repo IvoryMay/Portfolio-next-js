@@ -20,8 +20,8 @@ const Services = () => {
       className='text-2xl text-center font-semibold'>My Services</motion.h1>
 
       <motion.p
-      initial={{y:-20, opacity:0}}
-      whileInView={{y:0,opacity:1}}
+      initial={{ opacity:0}}
+      whileInView={{opacity:1}}
       transition={{duration:1, delay:0.7}}
       className='mt-4 text-gray-600 text-center max-w-2xl mx-auto'>
         I am a junior frontend developer and I am eager to learn and grow as a developer.

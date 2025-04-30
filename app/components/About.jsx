@@ -19,7 +19,7 @@ const About = () => {
       initial={{y:-20, opacity:0}}
       whileInView={{y:0,opacity:1}}
       transition={{duration:1, delay:0.5}}
-      className='text-2xl text-center font-semibold'>About me</motion.h1>
+      className='text-2xl text-center font-semibold'>Who I am</motion.h1>
 
       <motion.div
       initial={{ opacity:0}}
