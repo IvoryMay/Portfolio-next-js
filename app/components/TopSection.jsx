@@ -17,7 +17,7 @@ const TopSection = () => {
          whileInView={{scale:1}}
          transition={{duration:0.8, type:"spring",stiffness:100}}
          >
-         <a href='/me-smile.jpg'> <Image src="/me-inya.jpg"  alt="hero" width={150} height={150} className='rounded-lg w-auto h-auto' priority/></a>
+         <a href='/me-smile.jpg'> <Image src="/me-smile.jpg"  alt="hero" width={150} height={150} className='rounded-lg w-auto h-auto' priority/></a>
          </motion.div>
           <motion.p
           initial={{y:-20, opacity:0}}
