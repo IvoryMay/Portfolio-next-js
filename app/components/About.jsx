@@ -52,7 +52,7 @@ const About = ({isDarkMode, setIsDarkMode}) => {
             {aboutMe.map((el,index)=>(
               <motion.li
               whileInView={{scale:1.05}}
-              key={index} className='border-[0.5px] border-gray-400  rounded-xl p-6 cursor-pointer font-sans hover:shadow-lg hover:bg-green-100 hover:-translate-y-1 duration-500  dark:border-white/50 dark:hover:shadow-white/20 dark:hover:bg-green-800'>
+              key={index} className='border-[0.5px] border-gray-400  rounded-xl p-6 cursor-pointer font-sans hover:shadow-lg hover:bg-green-100 hover:-translate-y-1 duration-500  dark:border-white/50 dark:hover:shadow-white/20 dark:hover:bg-lime-700'>
                 
                 <span className='text-xl '>{el.icon}</span>
                 <h3 className='font-semibold  text-gray-700 mt-3 dark:text-white'>{el.title}</h3>

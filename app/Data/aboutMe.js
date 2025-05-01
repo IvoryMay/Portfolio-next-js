@@ -12,7 +12,7 @@ import { PiSuitcaseSimpleLight } from "react-icons/pi";
 },
 {
   title: "Education",
-  description: "B.Pharm, Learning programming in MMS IT since 2023",
+  description: "B.Pharm(Mdy), Learning programming in MMS IT since 2023",
   icon: <FaGraduationCap />
 },
 {
