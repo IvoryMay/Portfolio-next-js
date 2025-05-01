@@ -3,7 +3,7 @@ import React from 'react'
 import aboutMe from '../Data/aboutMe';
 import { motion } from "motion/react"
 
-const About = () => {
+const About = ({isDarkMode, setIsDarkMode}) => {
   return (
     <motion.div
     initial={{ opacity:0}}
@@ -52,11 +52,11 @@ const About = () => {
             {aboutMe.map((el,index)=>(
               <motion.li
               whileInView={{scale:1.05}}
-              key={index} className='border-[0.5px] border-gray-400  rounded-xl p-6 cursor-pointer font-sans hover:shadow-lg hover:bg-green-100 hover:-translate-y-1 duration-500'>
+              key={index} className='border-[0.5px] border-gray-400  rounded-xl p-6 cursor-pointer font-sans hover:shadow-lg hover:bg-green-100 hover:-translate-y-1 duration-500  dark:border-white/50 dark:hover:shadow-white/20 dark:hover:bg-green-800'>
                 
                 <span className='text-xl '>{el.icon}</span>
-                <h3 className='font-semibold  text-gray-700 mt-3'>{el.title}</h3>
-                <p className='mt-4 text-gray-600 text-sm'>{el.description}</p>
+                <h3 className='font-semibold  text-gray-700 mt-3 dark:text-white'>{el.title}</h3>
+                <p className='mt-4 text-gray-600 text-sm dark:text-white'>{el.description}</p>
                 
               </motion.li>
             ))}
@@ -72,10 +72,10 @@ const About = () => {
              whileInView={{y:0,opacity:1}}
              transition={{duration:1, delay:1.2}}
             className='flex flex-row gap-2 items-center'>
-              <li className='border-[0.5px] border-gray-400  rounded-xl p-2 cursor-pointer font-sans hover:shadow-lg hover:-translate-y-1 duration-500  size-12 '><Image src="/vs code.jpg"  alt="vscode" width={50} height={50} className='pt-1 pr-1'  /></li>
-              <li className='border-[0.5px] border-gray-400  rounded-xl p-2 cursor-pointer font-sans hover:shadow-lg hover:-translate-y-1 duration-500  size-12'><Image src="/zustand-white.jpg"  alt="zustand" width={50} height={50} className='pt-1.5' /></li>
-              <li className='border-[0.5px] border-gray-400  rounded-xl p-2 cursor-pointer  hover:shadow-lg  hover:-translate-y-1 duration-500  size-12 pb-2.5 pl-2.5 font-mono'>swr</li>
-              <li className='border-[0.5px] border-gray-400  rounded-xl p-2 cursor-pointer font-sans hover:shadow-lg hover:-translate-y-1 duration-500  size-12 pt-4'><Image src="/git-icon.png"  alt="git-icon" width={50} height={50}  /></li>
+              <li className='border-[0.5px] border-gray-400  rounded-xl p-2 cursor-pointer font-sans hover:shadow-lg hover:-translate-y-1 duration-500  size-12 dark:border-white/50 dark:bg-white'><Image src="/vs code.jpg"  alt="vscode" width={50} height={50} className='pt-1 pr-1'  /></li>
+              <li className='border-[0.5px] border-gray-400  rounded-xl p-2 cursor-pointer font-sans hover:shadow-lg hover:-translate-y-1 duration-500  size-12 dark:bg-white'><Image src="/zustand-white.jpg"  alt="zustand" width={50} height={50} className='pt-1.5' /></li>
+              <li className='border-[0.5px] border-gray-400  rounded-xl p-2 cursor-pointer  hover:shadow-lg  hover:-translate-y-1 duration-500  size-12 pb-2.5 pl-2.5 font-mono dark:bg-white dark:text-black'>swr</li>
+              <li className='border-[0.5px] border-gray-400  rounded-xl p-2 cursor-pointer font-sans hover:shadow-lg hover:-translate-y-1 duration-500  size-12 pt-4 dark:bg-white'><Image src="/git-icon.png"  alt="git-icon" width={50} height={50}  /></li>
               
             </motion.ul>
           </div>

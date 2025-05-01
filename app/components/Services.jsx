@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from "motion/react"
 
-const Services = () => {
+const Services = ({isDarkMode, setIsDarkMode}) => {
   return (
     <motion.div
     initial={{ opacity:0}}
@@ -23,7 +23,7 @@ const Services = () => {
       initial={{ opacity:0}}
       whileInView={{opacity:1}}
       transition={{duration:1, delay:0.7}}
-      className='mt-4 text-gray-600 text-center max-w-2xl mx-auto'>
+      className='mt-4 text-gray-600 text-center max-w-2xl mx-auto dark:text-white'>
         I am a junior frontend developer and I am eager to learn and grow as a developer.
       </motion.p>
       <motion.ul
@@ -35,27 +35,27 @@ const Services = () => {
         initial={{scale:0.7, opacity:0}}
         whileInView={{scale:1,opacity:1}}
         transition={{duration:1, delay:1.1}}
-        className='border-[0.5px] border-gray-400  rounded-xl p-6 cursor-pointer font-sans hover:shadow-lg hover:bg-green-100 hover:-translate-y-1 duration-500'>
-          <h3 className='font-semibold  text-gray-800 mt-3 text-center'>Frontend Development</h3>
-          <p className='mt-4 text-gray-700 text-sm text-center'>Building visually appealing and responsive user interfaces using HTML, Tailwind CSS, JavaScript, and React.</p>
+        className='border-[0.5px] border-gray-400  rounded-xl p-6 cursor-pointer font-sans hover:shadow-lg hover:bg-green-100 hover:-translate-y-1 duration-500 dark:bg-stone-700 dark:hover:bg-green-800'>
+          <h3 className='font-semibold  text-gray-800 mt-3 text-center dark:text-white'>Frontend Development</h3>
+          <p className='mt-4 text-gray-700 text-sm text-center dark:text-white'>Building visually appealing and responsive user interfaces using HTML, Tailwind CSS, JavaScript, and React.</p>
         </motion.li>
 
         <motion.li
         initial={{scale:0.7, opacity:0}}
         whileInView={{scale:1,opacity:1}}
         transition={{duration:1, delay:1.1}}
-        className='border-[0.5px] border-gray-400  rounded-xl p-6 cursor-pointer font-sans hover:shadow-lg hover:bg-green-100 hover:-translate-y-1 duration-500'>
-          <h3 className='font-semibold  text-gray-800 mt-3 text-center'>Website Optimization</h3>
-          <p className='mt-4 text-gray-700 text-sm text-center'>Improving site performance and SEO using Next.js.</p>
+        className='border-[0.5px] border-gray-400  rounded-xl p-6 cursor-pointer font-sans hover:shadow-lg hover:bg-green-100 hover:-translate-y-1 duration-500 dark:bg-stone-700 dark:hover:bg-green-800'>
+          <h3 className='font-semibold  text-gray-800 mt-3 text-center dark:text-white'>Website Optimization</h3>
+          <p className='mt-4 text-gray-700 text-sm text-center dark:text-white'>Improving site performance and SEO using Next.js.</p>
         </motion.li>
 
         <motion.li
         initial={{scale:0.7, opacity:0}}
         whileInView={{scale:1,opacity:1}}
         transition={{duration:1, delay:1.1}}
-        className='border-[0.5px] border-gray-400  rounded-xl p-6 cursor-pointer font-sans hover:shadow-lg hover:bg-green-100 hover:-translate-y-1 duration-500'>
-          <h3 className='font-semibold  text-gray-800 mt-3 text-center'>Custom Components</h3>
-          <p className='mt-4 text-gray-700 text-sm text-center'>Creating reusable and dynamic UI components tailored to your clients' needs.</p>
+        className='border-[0.5px] border-gray-400  rounded-xl p-6 cursor-pointer font-sans hover:shadow-lg hover:bg-green-100 hover:-translate-y-1 duration-500 dark:bg-stone-700 dark:hover:bg-green-800'>
+          <h3 className='font-semibold  text-gray-800 mt-3 text-center dark:text-white'>Custom Components</h3>
+          <p className='mt-4 text-gray-700 text-sm text-center dark:text-white'>Creating reusable and dynamic UI components tailored to your clients' needs.</p>
         </motion.li>
       </motion.ul>
     </motion.div>

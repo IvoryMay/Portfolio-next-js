@@ -4,7 +4,7 @@ import { FaLocationArrow } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { motion } from "motion/react"
 
-const MyWork = () => {
+const MyWork = ({isDarkMode, setIsDarkMode}) => {
   return (
     <motion.div
     initial={{ opacity:0}}
@@ -26,7 +26,7 @@ const MyWork = () => {
       initial={{ opacity:0}}
       whileInView={{opacity:1}}
       transition={{duration:1, delay:0.7}}
-      className='mt-4 text-gray-600 text-center max-w-2xl mx-auto '>
+      className='mt-4 text-gray-600 text-center max-w-2xl mx-auto dark:text-white'>
         Welcome to my web development portfolio! Explore a collection of my latest projects, showcasing my expertise in frontend web development.
       </motion.p>
 
@@ -65,7 +65,7 @@ const MyWork = () => {
       transition ={{duration:1, delay:1.1}}
       className='flex items-center justify-center'>
       <button className='text-stone-700 hover:text-stone-900 hover:scale-95 mt-6  '>
-        <a href="https://github.com/IvoryMay" target='_blank' rel="noreferrer" className='flex items-center justify-around  gap-6 border border-gray-400 px-3 py-1 rounded-full  '>
+        <a href="https://github.com/IvoryMay" target='_blank' rel="noreferrer" className='flex items-center justify-around  gap-6 border border-gray-400 px-3 py-1 rounded-full dark:text-white dark:bg-stone-700 '>
           <span>Explore more on GitHub</span >
           <FaArrowRightLong className=' size-4'/>
           </a>

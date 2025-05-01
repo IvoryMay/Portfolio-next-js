@@ -8,17 +8,17 @@ const Footer = () => {
   return (
     <div className="mt-20 mb-5">
       <div className=" flex items-end  justify-center ">
-        <span className="font-bold text-2xl text-[#386641]">Theint</span>
-        <IoGlassesOutline className="text-[#333d29] text-2xl" />
+        <span className="font-bold text-2xl text-[#386641] dark:text-lime-500">Theint</span>
+        <IoGlassesOutline className="text-[#333d29] text-2xl dark:text-[#b3c0a6]" />
       </div>
       <div className="flex items-center justify-center gap-2">
-        <TfiEmail className="text-blue-600 " />
-        <span className="font-sans text-sm text-gray-600">
+        <TfiEmail className="text-blue-600 dark:text-blue-300" />
+        <span className="font-sans text-sm text-gray-600 dark:text-white">
           theintsandikyaw1@gmail.com
         </span>
       </div>
       <div className="sm:flex items-center justify-between gap-2 mx-[10%] mt-4 border-t-2 border-gray-400">
-        <p className="text-center text-sm text-gray-600">
+        <p className="text-center text-sm text-gray-600 dark:text-white">
           &copy; 2025 Theint Sandi Kyaw. All right
           reserved.
         </p>

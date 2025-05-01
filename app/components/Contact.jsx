@@ -58,7 +58,7 @@ const Contact = () => {
       initial={{ opacity:0}}
       whileInView={{opacity:1}}
       transition={{duration:1, delay:0.6}}
-      className='mt-4 text-gray-600 text-center max-w-2xl mx-auto '>
+      className='mt-4 text-gray-600 text-center max-w-2xl mx-auto dark:text-white mb-3'>
         I'd love to hear from you! If you have any questions, comments or feedback, please use the form below.
       </motion.p>
 
@@ -73,18 +73,18 @@ const Contact = () => {
           initial={{ x:-50, opacity:0}}
           whileInView={{x:0,opacity:1}}
           transition={{duration:1.1, delay:0.9}}
-          type="text" placeholder='Enter your name'  required name="name" className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-lg bg-white'/>
+          type="text" placeholder='Enter your name'  required name="name" className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-lg bg-white dark:bg-stone-700 dark:text-white dark:placeholder:text-white dark:border-white/90'/>
           <motion.input
           initial={{ x:50, opacity:0}}
           whileInView={{x:0,opacity:1}}
           transition={{duration:1.1, delay:0.9}}
-          type="email" placeholder='Enter your email'  required name="email" className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-lg bg-white'/>
+          type="email" placeholder='Enter your email'  required name="email" className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-lg bg-white dark:bg-stone-700 dark:placeholder:text-white dark:border-white/90'/>
           </div>
           <motion.textarea
           initial={{ y:50, opacity:0}}
           whileInView={{y:0,opacity:1}}
           transition={{duration:1.1, delay:1}}
-          id="" cols="30" rows="6" name ="message" placeholder='Enter your message' className='w-full mt-4 p-3 outline-none border-[0.5px] border-gray-400 rounded-lg bg-white resize-none'/>
+          id="" cols="30" rows="6" name ="message" placeholder='Enter your message' className='w-full mt-4 p-3 outline-none border-[0.5px] border-gray-400 rounded-lg bg-white  dark:bg-stone-700 dark:placeholder:text-white dark:border-white/90'/>
           <motion.button
           initial={{ y:60, opacity:0}}
           whileInView={{y:0,opacity:1}}

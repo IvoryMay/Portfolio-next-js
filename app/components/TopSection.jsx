@@ -7,7 +7,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { FaArrowDown } from "react-icons/fa6";
 import { motion } from "motion/react"
 
-const TopSection = () => {
+const TopSection = ({isDarkMode, setIsDarkMode}) => {
   return (
     <section id='top'>
       <div className='flex flex-col items-center justify-center h-screen text-center w-11/12 max-w-3xl mx-auto'>
@@ -41,7 +41,7 @@ const TopSection = () => {
           initial={{x:40, opacity:0}}
           whileInView={{x:0, opacity:1}}
           transition={{duration:0.8, delay:1.2}}
-          className='flex items-center gap-2 border border-gray-500 px-4 py-2 rounded-full'><span>my resume</span><FaArrowDown /></motion.a>
+          className='flex items-center gap-2 border border-gray-500 px-4 py-2 rounded-full dark:bg-white dark:text-stone-900'><span>my resume</span><FaArrowDown /></motion.a>
         </div>
       </div>
 
