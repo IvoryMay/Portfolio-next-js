@@ -11,36 +11,33 @@ const MyWork = ({isDarkMode, setIsDarkMode}) => {
     whileInView={{opacity:1}}
     transition={{duration:1}}
     id='work' className='w-full  px-[12%] py-10 scroll-mt-30 '>
-       <motion.h4
-       initial={{y:-20, opacity:0}}
-       whileInView={{y:0,opacity:1}}
-       transition={{duration:0.5, delay:0.3}}
-       className=' text-center mb-2'>My portfolio</motion.h4>
-      <motion.h1
-      initial={{y:-20, opacity:0}}
-      whileInView={{y:0,opacity:1}}
-      transition={{duration:1, delay:0.5}}
-      className='text-2xl text-center font-semibold'>My Latest Work</motion.h1>
+       <h4
+       className=' text-center mb-2'>My portfolio</h4>
+      <h1
+      // initial={{y:-20, opacity:0}}
+      // whileInView={{y:0,opacity:1}}
+      // transition={{duration:1, delay:0.5}}
+      className='text-2xl text-center font-semibold'>My Latest Work</h1>
 
-      <motion.p 
-      initial={{ opacity:0}}
-      whileInView={{opacity:1}}
-      transition={{duration:1, delay:0.7}}
+      <p 
+      // initial={{ opacity:0}}
+      // whileInView={{opacity:1}}
+      // transition={{duration:1, delay:0.7}}
       className='mt-4 text-gray-600 text-center max-w-2xl mx-auto dark:text-white'>
         Welcome to my web development portfolio! Explore a collection of my latest projects, showcasing my expertise in frontend web development.
-      </motion.p>
+      </p>
 
     
-      <motion.div
-      initial={{y:-20, opacity:0}}
-      whileInView={{y:0,opacity:1}}
-      transition={{duration:1, delay:0.9}}
+      <div
+      // initial={{y:-20, opacity:0}}
+      // whileInView={{y:0,opacity:1}}
+      // transition={{duration:1, delay:0.9}}
       className='grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-6 mt-8'>
         {myWorks.map((el,index)=>(
-          <motion.div
-          initial={{scale:0.7, opacity:0}}
-        whileInView={{scale:1,opacity:1}}
-        transition={{duration:1, delay:1.1}}
+          <div
+        //   initial={{scale:0.7, opacity:0}}
+        // whileInView={{scale:1,opacity:1}}
+        // transition={{duration:1, delay:1.1}}
           key={index} style={{backgroundImage:`url(${el.image})`}} className='aspect-square bg-contain bg-no-repeat bg-center rounded-lg relative border-[0.5px] border-gray-400 bg-blue-200  cursor-pointer font-sans hover:shadow-lg hover:bg-green-100 hover:-translate-y-1 duration-500 group'>
           <div>
           <h3 className='font-semibold  text-gray-800 mt-3 text-center'>{el.title}</h3>
@@ -51,18 +48,18 @@ const MyWork = ({isDarkMode, setIsDarkMode}) => {
           </div>
           
 
-        </motion.div>
+        </div>
         ))}
         
 
         
         
        
-      </motion.div>
+      </div>
       <motion.div
       initial={{y:20, opacity:0}}
       whileInView={{y:0,opacity:1}}
-      transition ={{duration:1, delay:1.1}}
+      transition ={{duration:1, delay:0.5}}
       className='flex items-center justify-center'>
       <button className='text-stone-700 hover:text-stone-900 hover:scale-95 mt-6  '>
         <a href="https://github.com/IvoryMay" target='_blank' rel="noreferrer" className='flex items-center justify-around  gap-6 border border-gray-400 px-3 py-1 rounded-full dark:text-white dark:bg-stone-700 '>
