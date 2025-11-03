@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
 import aboutMe from '../Data/aboutMe';
-import { motion } from "motion/react"
-
+import { motion } from "motion/react";
+import { montserrat,poppins } from '../Data/font';
 const About = ({isDarkMode, setIsDarkMode}) => {
   return (
     <motion.div
@@ -10,16 +10,16 @@ const About = ({isDarkMode, setIsDarkMode}) => {
       whileInView={{opacity:1}}
       transition={{duration:1}}
     id='about' className='w-full  px-[12%] py-10 scroll-mt-30 '>
-      <motion.h4 
+      <h4 
       // initial={{y:-20, opacity:0}}
       // whileInView={{y:0,opacity:1}}
       // transition={{duration:0.5, delay:0.3}}
-      className=' text-center mb-2'>Introduction</motion.h4>
-      <motion.h1 
+      className={`${montserrat.className} text-center mb-2`}>Introduction</h4>
+      <h1 
       // initial={{y:-20, opacity:0}}
       // whileInView={{y:0,opacity:1}}
       // transition={{duration:1, delay:0.5}}
-      className='text-2xl text-center font-semibold'>Who I am</motion.h1>
+      className={`${poppins.className} text-2xl text-center font-semibold`}>Who I am</h1>
 
       <motion.div
       initial={{ opacity:0}}
@@ -42,33 +42,33 @@ const About = ({isDarkMode, setIsDarkMode}) => {
           // initial={{y:-20, opacity:0}}
           // whileInView={{y:0,opacity:1}}
           // transition={{duration:1, delay:0.7}}
-          className=' max-w-2xl mb-10 font-sans text-center '>I'm a junior Full Stack Developer. I thrive on learning and growing as a developer, and I am eager to join a collaborative development team where I can expand my skills,
+          className={`${poppins.className} max-w-2xl mb-10   text-center `}>I'm a junior Full Stack Developer. I thrive on learning and growing as a developer, and I am eager to join a collaborative development team where I can expand my skills,
         contribute to meaningful projects, and tackle exciting challenges. </p>
-          <ul
+          <div className= {`${poppins.className} grid grid-cols-1 sm:grid-cols-3 gap-3 `}
           // initial={{y:-20, opacity:0}}
           // whileInView={{y:0,opacity:1}}
           // transition={{duration:1, delay:0.9}}
-          className='grid grid-cols-1 sm:grid-cols-3 gap-6 ' >
+           >
             {aboutMe.map((el,index)=>(
               <div
               // whileInView={{scale:1.05}}
-              key={index} className='border-[0.5px] border-gray-400  rounded-xl p-6 cursor-pointer font-sans hover:shadow-lg hover:bg-green-100 hover:-translate-y-1 duration-500  dark:border-white/50 dark:hover:shadow-white/20 dark:hover:bg-lime-700'>
+              key={index} className='border-[0.5px] border-gray-400  rounded-xl px-4 py-6 cursor-pointer  hover:shadow-lg hover:bg-green-100 hover:-translate-y-1 duration-500  dark:border-white/50 dark:hover:shadow-white/20 dark:hover:bg-lime-700'>
                 
                 <span className='text-xl '>{el.icon}</span>
                 <h3 className='font-semibold  text-gray-700 mt-3 dark:text-white'>{el.title}</h3>
-                <p className='mt-4 text-gray-600 text-sm dark:text-white'>{el.description.map((desc, i) => (
-        <li className='list-disc list-inside' key={i}>{desc}</li>
-      ))}</p>
+                <div className='mt-4  text-gray-600 text-sm dark:text-white'>{el.description.map((desc, i) => (
+        <p  key={i}>{desc}</p>
+      ))}</div>
                 
               </div>
             ))}
-          </ul>
+          </div>
           <div className='mt-8'>
             <h3 
             // initial={{ opacity:0}}
             // whileInView={{opacity:1}}
             // transition={{duration:1, delay:1}}
-            className='font-semibold text-gray-800 text-lg mb-2'>Tools I use</h3>
+            className={`${montserrat.className} font-semibold text-gray-800 text-lg mb-2`}>Tools I use</h3>
             <ul
             //  initial={{y:20, opacity:0}}
             //  whileInView={{y:0,opacity:1}}

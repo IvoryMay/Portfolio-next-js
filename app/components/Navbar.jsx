@@ -10,6 +10,7 @@ import { RiMenu3Line } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
 import Image from 'next/image';
 import { PiSunLight } from "react-icons/pi";
+import { outfit,ovo,montserrat,poppins } from '../Data/font';
 
 const Navbar = ({ isDarkMode, setIsDarkMode}) => {
   const sideBarRef = useRef();
@@ -40,7 +41,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode}) => {
   return (
     <>
     
-    <nav className={`fixed flex justify-between items-center w-full py-4 px-6 lg:px-8 xl:px-[8%] z-50  ${isScroll ? "bg-white  bg-opacity-50 shadow-sm dark:bg-stone-800 dark:shadow-white/20 " : ""} `}>
+    <nav className={`fixed flex justify-between items-center w-full py-4 px-6 lg:px-8 xl:px-[8%] z-50  ${isScroll ? "bg-white  bg-opacity-50 shadow-sm dark:bg-stone-800 dark:shadow-white/20 " : ""} ${poppins.className}`}>
       <a href='#top'>
         <div className=" flex items-end  justify-center ">
                 <span className="font-bold text-2xl text-[#386641] dark:text-lime-500">Theint</span>

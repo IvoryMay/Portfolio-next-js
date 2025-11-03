@@ -5,7 +5,8 @@ import React from 'react'
 import { MdOutlineWavingHand } from "react-icons/md";
 import { FaArrowRight } from "react-icons/fa6";
 import { FaArrowDown } from "react-icons/fa6";
-import { motion } from "motion/react"
+import { motion } from "motion/react";
+import { outfit,ovo,montserrat,poppins } from '../Data/font';
 
 const TopSection = ({isDarkMode, setIsDarkMode}) => {
   return (
@@ -24,25 +25,29 @@ const TopSection = ({isDarkMode, setIsDarkMode}) => {
           // initial={{y:-10, opacity:0}}
           // whileInView={{y:0, opacity:1}}
           // transition={{duration:0.6, delay:0.3}}
-          className='flex items-center gap-2 text-xl mb-4'>Hi! I'm Theint Sandi Kyaw.<MdOutlineWavingHand className='text-amber-600'/></p>
+          className={`${poppins.className} flex flex-row items-center gap-2 text-lg mb-4`}>Hi! I'm Theint Sandi Kyaw.<MdOutlineWavingHand className='text-amber-600'/></p>
         </div>
         <p
         // initial={{y:-20, opacity:0}}
         // whileInView={{y:0, opacity:1}}
         // transition={{duration:0.5, delay:0.5}}
-        className='text-2xl font-semibold font-serif max-w-2xl '>I'm a junior Full Stack Developer based in Yangon, Myanmar</p>
-        <div className='flex items-center gap-4 sm:flex-row flex-col mt-4'>
-          <motion.a
+        className={`${montserrat.className} text-xl font-semibold font-serif max-w-2xl `}>I'm a junior Full Stack Developer based in Yangon, Myanmar.</p>
+        <div className={`${poppins.className} flex items-center gap-4 sm:flex-row flex-col mt-4`}>
+          <motion.div
           initial={{x:-40, opacity:0}}
           whileInView={{x:0, opacity:1}}
-          transition={{duration:0.5, delay:0.5}}
-          href="#contact" className='flex items-center gap-2 border border-gray-500 px-4 py-2 rounded-full bg-gray-800 text-white hover:scale-75 duration-200'><span>contact me</span><FaArrowRight /></motion.a>
+          transition={{duration:0.5, delay:0.5}}>
+          <a  
+          href="#contact" className='flex items-center gap-2 border border-gray-500 px-4 py-2 rounded-full bg-gray-800 text-white hover:scale-75 duration-200'><span>contact me</span><FaArrowRight /></a>
+          </motion.div>
 
-          <motion.a 
+          <motion.div
           initial={{x:40, opacity:0}}
           whileInView={{x:0, opacity:1}}
-          transition={{duration:0.5, delay:0.5}}
-          className='flex items-center gap-2 border border-gray-500 px-4 py-2 rounded-full dark:bg-white dark:text-stone-900 hover:scale-75 duration-200'><span>my resume</span><FaArrowDown /></motion.a>
+          transition={{duration:0.5, delay:0.5}}>
+          <a 
+          className='flex items-center gap-2 border border-gray-500 px-4 py-2 rounded-full dark:bg-white dark:text-stone-900 hover:scale-75 duration-200'><span>my resume</span><FaArrowDown /></a>
+          </motion.div>
         </div>
       </div>
 
