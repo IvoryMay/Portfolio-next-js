@@ -25,7 +25,7 @@ const MyWork = ({isDarkMode, setIsDarkMode}) => {
       // whileInView={{opacity:1}}
       // transition={{duration:1, delay:0.7}}
       className={`${poppins.className} mt-4 text-gray-600 text-center max-w-2xl mx-auto dark:text-white`}>
-        Welcome to my web development portfolio! Explore a collection of my latest projects, showcasing my expertise in frontend web development.
+        Welcome to my web development portfolio! Explore a collection of my latest projects, showcasing my practice in frontend web development.
       </p>
 
     
