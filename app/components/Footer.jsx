@@ -27,7 +27,7 @@ const Footer = () => {
 
         <div className="flex items-center justify-center gap-4">
           <div >
-            <a href="https://www.linkedin.com/in/theint-s-kyaw-3999732b6/" className="flex items-center gap-1" target="_blank">
+            <a href="https://www.linkedin.com/in/theint-sandi-kyaw-3999732b6/" className="flex items-center gap-1" target="_blank">
               <FaLinkedin />
               <span className="text-sm hover:underline">LinkedIn</span>
             </a>
