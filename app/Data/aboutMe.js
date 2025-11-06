@@ -18,8 +18,8 @@ import { PiSuitcaseSimpleLight } from "react-icons/pi";
   {
     title: "Education",
     description: [
-      "B.Pharm (University of Pharmacy, Mandalay)",
       "Learning programming at MMS IT since 2023",
+      "B.Pharm (University of Pharmacy, Mandalay)"
     ],
     icon: <FaGraduationCap />,
   }

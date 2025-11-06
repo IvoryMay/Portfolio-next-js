@@ -25,7 +25,7 @@ const Services = ({isDarkMode, setIsDarkMode}) => {
       // initial={{ opacity:0}}
       // whileInView={{opacity:1}}
       // transition={{duration:1, delay:0.7}}
-      className={`${poppins.className} mt-4 text-gray-700 text-center max-w-2xl mx-auto dark:text-white'`}>
+      className={`${poppins.className} mt-4 text-gray-700 text-center max-w-2xl mx-auto dark:text-white`}>
         I am a junior full stack developer and I can handle both frontend and backend development.
       </p>
       <div
