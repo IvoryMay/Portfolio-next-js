@@ -79,8 +79,8 @@ const About = ({ isDarkMode, setIsDarkMode }) => {
                 </h3>
                 <div className="mt-4  text-gray-600 text-sm dark:text-white">
                   {el.description.map((desc, i) => (
-                    <p key={i} className="flex items-start gap-2 ">
-                      <FaCheckCircle className="text-green-500 mt-1 size-3" />
+                    <p key={i} className="flex gap-2 items-start mx-3 ">
+                      <FaCheckCircle className="text-green-500 mt-1 flex-shrink-0" />
                       {desc}
                     </p>
                   ))}
