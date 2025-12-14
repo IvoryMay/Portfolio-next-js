@@ -2,13 +2,13 @@
 
 
 const myWorks =  [
-//   {
-//   id: 1,
-//   title: "Gemini clone",
-//   image: "/gemini.png", 
-//   description:"Tailwind CSS, React Js, Gemini API ",
-//   liveLink: "https://gemini-clone-liard-seven.vercel.app/",
-// },
+  {
+  id: 1,
+  title: "Gemini clone",
+  image: "/gemini.png", 
+  description:"Tailwind CSS, React Js, Gemini API ",
+  liveLink: "https://gemini-clone-liard-seven.vercel.app/",
+},
 
 // {
 // id: 2,
@@ -19,14 +19,14 @@ const myWorks =  [
 // }
 
 ,{
-  id: 1,
+  id: 2,
   title: "Invoice app",
   image: "/invoice.png", 
   description:"Tailwind CSS, Js",
   liveLink: "https://invoice-app-five-gray.vercel.app/",
 },
 {
-id: 2,
+id: 3,
   title: "Task manager",
   image: "/task-manager.png", 
   description:"Tailwind CSS, Js",
